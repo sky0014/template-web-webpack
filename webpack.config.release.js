@@ -71,16 +71,6 @@ module.exports = {
         }
       },
       {
-        test: /\.html$/,
-        use: {
-          loader: "html-loader",
-          options: {
-            minimize: true,
-            name: "[name].[ext]"
-          }
-        }
-      },
-      {
         test: /\.swf$/,
         use: {
           loader: "file-loader",
