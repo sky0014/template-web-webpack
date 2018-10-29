@@ -4,7 +4,7 @@
   "description": "${PROJECT_DESCRIPTION}",
   "main": "dist/js/bunder.js",
   "scripts": {
-    "dev": "webpack --env=dev --watch --progress --colors",
+    "dev": "webpack-dev-server --env=dev --watch --progress --colors",
     "release": "webpack --env=release --progress --profile --colors"
   },
   "author": "${AUTHOR} <${EMAIL}>",
@@ -21,6 +21,7 @@
     "html-webpack-plugin": "^2.29.0",
     "style-loader": "^0.17.0",
     "url-loader": "^0.5.8",
-    "webpack": "^2.5.1"
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^1"
   }
 }

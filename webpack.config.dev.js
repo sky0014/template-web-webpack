@@ -14,6 +14,14 @@ module.exports = {
     filename: "js/[name].js"
   },
 
+  // webpack-dev-server配置
+  devServer: {
+    contentBase: "./dist",
+    port: 9003,
+    progress: true, //显示进度
+    compress: true //开启压缩
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.ejs"
